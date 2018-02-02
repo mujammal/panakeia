@@ -1,0 +1,464 @@
+/*
+* ==================================================
+* 01. Basic
+* ==================================================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+* ==================================================
+* 02. button
+* ==================================================
+*/
+
+
+.btn1,
+.btn2 {
+    display:  block;
+    width: 200px;
+    padding: 13px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    text-decoration:  none;
+    color: #612316;
+    text-align:  center;
+    text-transform: capitalize; 
+}
+
+.btn3 {
+    display: inline-block;
+    width: 200px;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    text-decoration:  none;
+    color: #612316;
+    text-align:  center;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+.btn1 {
+    margin: 30px auto 0;
+}
+
+.btn2 {
+    background-color: #dd4b2b;
+    color: #fff;    
+    margin-top: 30px;
+}
+
+.btn1:hover,
+.btn3:hover {
+    color: #fff;
+    background-color: #dd4b2b;
+}
+
+.btn2:hover {
+    color: #fff;
+    background-color: #4b4e73;
+}
+
+
+*/
+/*
+* ==================================================
+* 03. header
+* ==================================================
+*/
+
+.overlay1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
+    opacity: 1;
+}
+
+.overlay2 {
+    position: relative;
+}
+
+.overlay2:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #034854;
+    mix-blend-mode: lighten;
+}
+
+.shadow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
+}
+
+/*
+* ==================================================
+* 04. header
+* ==================================================
+*/
+
+header {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 10px;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #EDEFF1;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.logo p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #31353e;
+}
+
+.logo span {
+    font-size: 17px;
+    font-weight: 400;
+    color: #dd4b2b;
+}
+
+nav {
+    width: 80%;
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    padding: 11px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    padding: 10px 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #31353e;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #dd4b2b;
+    color: #edeff1;
+    border-radius: 50px;
+}
+
+/*
+* ==================================================
+* 05. banner
+* ==================================================
+*/
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/Panakeia_template-Symu_co.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.banner .header h1 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: 5px;
+    padding-top: 215px;
+}
+
+.banner .header p {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.banner-content {
+    text-align: center;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.block {
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+}
+
+.banner-content img {
+    width: 130px;
+    height: 130px;
+    border: 4px solid #fff;
+    border-radius: 100%;
+}
+
+.banner-content h3 {
+    padding: 15px 0;
+    font-size: 23px;
+}
+
+.banner-content p {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+/*
+* ==================================================
+* 06. News
+* ==================================================
+*/
+
+.news .header {
+    text-align: center;
+    width: 100%;
+    padding: 90px 0 50px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #31353e;
+    z-index: 6;
+}
+
+.news .news-content {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 100px;
+}
+
+.news .news-content h3 {
+    padding: 15px 0;
+}
+
+.news .news-content p {
+    line-height: 2;
+}
+
+.news .news-content img {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+* ==================================================
+* 07. Newsletter
+* ==================================================
+*/
+
+.newsletter .header {
+    text-align: center;
+    width: 100%;
+    padding: 90px 0 50px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #31353e;
+    z-index: 6;
+}
+
+.newsletter {
+    width: 100%;
+    min-height: 300px;
+    background-image: url(../images/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 100px 0;
+    position: relative;
+}
+
+.newsletter-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.newsletter-box h2 {
+    padding: 10px 0;
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+}
+
+.newsletter-box p {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* form section */
+
+form {
+    width: 100%;
+    padding: 40px 0;
+}
+
+input[type="email"] {
+    width: 54%;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid #fff;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, .5);
+    opacity: .5;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    width: 20%;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    background: #fff;
+    border: 1px solid #fff;
+    /* animation section */
+    -webkit-transform: translateX(-43%);
+    transform: translateX(-43%);
+    -webkit-animation-name: animated;
+    animation-name: animated;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes animated {
+    0% {
+        -webkit-transform: translateX(-30%);
+        transform: translateX(-30%);
+    }
+    100% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes animated {
+    0% {
+        -webkit-transform: translateX(-30%);
+        transform: translateX(-30%);
+    }
+    100% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
+/*
+* ==================================================
+* 08. Newsletter content
+* ==================================================
+*/
+
+.items-details .newsletter-content {
+    padding: 50px 0 80px;
+}
+
+.info {
+    background-color: #D75D0E;
+    padding: 17px 0;
+    text-align: center;
+    color: white;
+}
+
+.newsletter-content img {
+    display: block;
+    width: 100%;
+}
+
+.info-content p {
+    padding: 10px 0;
+}
+
+/*
+* ==================================================
+* 09. footer
+* ==================================================
+*/
+
+.footer {
+    width: 100%;
+    background-image: url(../images/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+footer p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    padding: 50px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
